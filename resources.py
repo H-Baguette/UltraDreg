@@ -1,0 +1,2 @@
+DREG_AVATAR = ""
+COMMAND_PREFIX = "d!"
