@@ -16,4 +16,4 @@ python3.8 dreg.py <access_token>
 in the project directory.
 
 ## Contribution
-If you're going to start making PRs, please try and follow [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) conventions.
+If you're going to start making PRs, please try and follow [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) conventions. That means clone the repo and make a new branch for whatever you're doing, i.e if you're making a new feature, call it `feature/name`, or for a hotfix, `hotfix/name`, etc.
