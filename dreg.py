@@ -9,7 +9,10 @@ from logging import handlers
 # Modules
 from join import Join
 from dreg_help import DREG_Help
+from togglerole import Toggle_Role
 from status import Status
+from linkforum import Link_Forum
+from aldo import Post_Aldo
 # Constants
 from roles import has_any_role
 import channels
@@ -29,12 +32,15 @@ LOGGER = logging.getLogger('dreg')
 LOGGER.setLevel(logging.DEBUG)
 
 # command prefix defined in resources.py, i know its janky but its the
-# only way i can get it to work
+# only way i can get it to work, otherwise it shits itself
 bot = ext.commands.Bot(command_prefix='', case_insensitive=True)
 
 # register modules
 MODULES = [
     #Join(bot),
+    Post_Aldo(bot),
+    Toggle_Role(bot),
+    Link_Forum(bot)
 ]
 
 MODULES.append(DREG_Help(bot, MODULES))
