@@ -50,7 +50,7 @@ class Check_Ratio():
 
         try:
             cursor.execute("SELECT ForumToken FROM userids WHERE DiscordID = "+str(target))
-            hasToken = cursor.fetchone()[0]
+            hasToken = cursor.fetchone()
 
             cursor.close()
             connection.close()
@@ -58,7 +58,7 @@ class Check_Ratio():
             if hasToken == None:
                 await message.channel.send("That user hasn't linked their account yet.")
                 return
-
+            hasToken = hasToken[0]
 
             connection = MySQLdb.connect(
                 host = resources.TLDR_HOST,
