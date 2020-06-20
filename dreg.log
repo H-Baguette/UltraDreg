@@ -1,0 +1,710 @@
+2020-06-20 18:42:46,644:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:42:50,400:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000014A0B9B1940>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:42:50,400:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000014A0B9B1880>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:42:50,401:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000014A0B9B18E0>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:42:50,401:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000014A0B9B1970>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:42:50,445:DEBUG:dreg:      Checking rep of Baguette#8435
+2020-06-20 18:42:51,534:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 70, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 =")
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-06-20 18:44:22,284:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:44:24,873:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000020504471940>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:44:24,874:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000020504471880>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:44:24,874:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000205044718E0>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:44:24,874:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000020504471970>> for message: [d!checkrep] in server bot testing
+2020-06-20 18:44:24,874:DEBUG:dreg:      CHECKING MESSAGE AUTHOR
+2020-06-20 18:44:24,874:DEBUG:dreg:      Checking rep of Baguette#8435
+2020-06-20 18:44:24,875:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 18:44:25,794:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 73, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 =")
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-06-20 18:44:34,696:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:44:40,498:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000024405EA18E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:44:40,498:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000024405EA1820>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:44:40,499:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000024405EA1880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:44:40,499:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000024405EA1910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:44:40,499:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 18:44:40,499:DEBUG:dreg:      Checking rep of <@!144189675261788160>
+2020-06-20 18:44:40,500:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 40, in checkrep
+    LOGGER.debug("TARGET ID IS "+str(target.id))
+AttributeError: 'str' object has no attribute 'id'
+2020-06-20 18:55:05,674:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:55:15,265:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000256303F1940>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:55:15,266:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000256303F1880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:55:15,268:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000256303F18E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:55:15,269:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000256303F1970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:55:15,270:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 34, in checkrep
+    target = re.compile('[0-9]+').match(message.content.split(' ')[1]).group(0)
+AttributeError: 'NoneType' object has no attribute 'group'
+2020-06-20 18:56:32,461:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:56:38,810:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001C8E0F51970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:56:38,811:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001C8E0F518B0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:56:38,814:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001C8E0F51910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:56:38,815:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001C8E0F519A0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:56:38,815:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 18:56:38,816:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 18:56:38,816:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 18:56:40,336:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 74, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 =")
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-06-20 18:59:09,366:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 18:59:17,146:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000196B2F01970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:59:17,147:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000196B2F018B0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:59:17,148:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000196B2F01910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:59:17,149:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000196B2F019A0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 18:59:17,151:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 18:59:17,151:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 18:59:17,153:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 18:59:17,163:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 18:59:18,061:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 75, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+2020-06-20 19:00:14,516:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:00:20,183:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000002172AD51A30>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:00:20,184:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000002172AD51970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:00:20,186:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000002172AD519D0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:00:20,188:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000002172AD51A60>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:00:20,188:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:00:20,188:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:00:20,189:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:00:20,198:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:00:20,968:DEBUG:dreg:      TOKEN IS ('3394217',)
+2020-06-20 19:00:21,098:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 76, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+2020-06-20 19:03:10,718:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:03:22,683:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000002C9E78F19D0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:03:22,684:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000002C9E78F1910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:03:22,686:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000002C9E78F1970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:03:22,687:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000002C9E78F1A00>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:03:22,688:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:03:22,688:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:03:22,689:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:03:22,699:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:03:23,473:DEBUG:dreg:      TOKEN IS ()
+2020-06-20 19:03:23,600:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 76, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+2020-06-20 19:04:35,136:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:04:41,667:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001E904C31940>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:04:41,668:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001E904C31880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:04:41,669:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001E904C318E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:04:41,671:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001E904C31970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:04:41,672:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:04:41,672:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:04:41,673:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:04:41,682:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:04:43,091:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 72, in checkrep
+    cursor.execute("USE thetldrc_thetldr3")
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1044, "Access denied for user 'thetldrc_bag'@'%' to database 'thetldrc_thetldr3'")
+2020-06-20 19:19:54,022:WARNING:discord.gateway:      Can't keep up, websocket is 10.8s behind.
+2020-06-20 19:21:30,010:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001E904C31940>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:21:30,010:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001E904C31880>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:21:30,012:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001E904C318E0>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:21:30,013:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001E904C31970>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:21:30,014:DEBUG:dreg:      CHECKING MESSAGE AUTHOR
+2020-06-20 19:21:30,014:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:21:30,015:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:21:30,018:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:21:32,359:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 19:21:32,620:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 76, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'member_id' in 'field list'")
+2020-06-20 19:21:39,678:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:21:44,463:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000015A838818E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:21:44,463:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000015A83881820>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:21:44,463:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000015A83881880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:21:44,464:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000015A83881910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:21:44,464:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:21:44,464:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:21:44,464:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:21:44,474:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:21:46,055:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 19:21:46,787:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 76, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'member_id' in 'field list'")
+2020-06-20 19:24:06,446:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000015A838818E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:24:06,446:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000015A83881820>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:24:06,446:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000015A83881880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:24:06,447:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000015A83881910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:24:06,447:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:24:06,447:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:24:06,447:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:24:06,449:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:24:07,225:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 19:24:07,351:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep <@!144189675261788160>] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 76, in checkrep
+    cursor.execute("SELECT member_id FROM information_schema.VIEWS WHERE TABLE_SCHEMA='thetldrc_thetldr3' AND TABLE_NAME='MemberReputation' AND field_17 = "+str(hasToken))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'member_id' in 'field list'")
+2020-06-20 19:28:53,841:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:29:00,583:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001FE86A71940>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:00,584:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001FE86A71880>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:00,586:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001FE86A718E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:00,587:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001FE86A71970>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:00,588:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 19:29:00,588:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:29:00,589:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:29:00,599:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:29:01,407:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 19:29:01,539:DEBUG:dreg:      MEMBER ID IS (9192,)
+2020-06-20 19:29:01,540:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001FE86A719A0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:01,541:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001FE86A719D0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 19:29:01,542:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 19:29:31,126:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 19:29:39,557:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001D447971940>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:39,558:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001D447971880>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:39,559:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001D4479718E0>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:39,561:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001D447971970>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:39,561:DEBUG:dreg:      CHECKING MESSAGE AUTHOR
+2020-06-20 19:29:39,562:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 19:29:39,562:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 19:29:39,573:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 19:29:40,342:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 19:29:40,481:DEBUG:dreg:      MEMBER ID IS 9192
+2020-06-20 19:29:40,482:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001D4479719A0>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:40,483:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001D4479719D0>> for message: [d!checkrep] in server bot testing
+2020-06-20 19:29:40,486:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 20:05:30,581:ERROR:discord.client:      Attempting a reconnect in 0.25s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 468, in poll_event
+    msg = await self.recv()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 350, in recv
+    yield from self.ensure_open()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 511, in ensure_open
+    raise ConnectionClosed(
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 421, in _connect
+    await self.ws.poll_event()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 476, in poll_event
+    raise ConnectionClosed(exc, shard_id=self.shard_id) from exc
+discord.errors.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+2020-06-20 20:05:37,424:ERROR:discord.client:      Attempting a reconnect in 0.46s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 952, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 824, in _resolve_host
+    addrs = await \
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 418, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0, loop=self.loop)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 796, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 473, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 522, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 853, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 959, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:None [getaddrinfo failed]
+2020-06-20 20:05:38,153:ERROR:discord.client:      Attempting a reconnect in 2.64s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 952, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 824, in _resolve_host
+    addrs = await \
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 418, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0, loop=self.loop)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 796, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 473, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 522, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 853, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 959, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:None [getaddrinfo failed]
+2020-06-20 20:05:40,799:ERROR:discord.client:      Attempting a reconnect in 5.93s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 952, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 824, in _resolve_host
+    addrs = await \
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 418, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0, loop=self.loop)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 796, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 473, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 522, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 853, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 959, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:None [getaddrinfo failed]
+2020-06-20 20:05:57,954:WARNING:discord.gateway:      Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-06-20 20:07:27,944:ERROR:discord.client:      Attempting a reconnect in 31.52s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 468, in poll_event
+    msg = await self.recv()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 350, in recv
+    yield from self.ensure_open()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 511, in ensure_open
+    raise ConnectionClosed(
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 421, in _connect
+    await self.ws.poll_event()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 476, in poll_event
+    raise ConnectionClosed(exc, shard_id=self.shard_id) from exc
+discord.errors.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+2020-06-20 20:07:50,962:WARNING:discord.gateway:      Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-06-20 20:16:28,758:ERROR:discord.client:      Attempting a reconnect in 29.06s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 468, in poll_event
+    msg = await self.recv()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 350, in recv
+    yield from self.ensure_open()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\websockets\protocol.py", line 511, in ensure_open
+    raise ConnectionClosed(
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 421, in _connect
+    await self.ws.poll_event()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 476, in poll_event
+    raise ConnectionClosed(exc, shard_id=self.shard_id) from exc
+discord.errors.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+2020-06-20 20:16:56,129:WARNING:discord.gateway:      Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-06-20 20:16:57,830:ERROR:discord.client:      Attempting a reconnect in 61.43s
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 952, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 824, in _resolve_host
+    addrs = await \
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 457, in connect
+    await self._connect()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 418, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0, loop=self.loop)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 796, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\client.py", line 473, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 522, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 853, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\aiohttp\connector.py", line 959, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:None [getaddrinfo failed]
+2020-06-20 21:49:30,986:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 21:49:34,241:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001AB4D8518B0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:34,242:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001AB4D8517F0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:34,243:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001AB4D851850>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:34,245:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001AB4D8518E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:34,245:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 21:49:34,246:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 21:49:34,246:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 21:49:34,409:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 21:49:35,183:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 21:49:35,350:DEBUG:dreg:      MEMBER ID IS 9192
+2020-06-20 21:49:35,775:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 21:49:35,784:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001AB4D851910>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:35,785:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001AB4D851940>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 21:49:35,786:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 21:49:39,876:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001AB4D8518B0>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,876:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001AB4D8517F0>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,878:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001AB4D851850>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,880:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001AB4D8518E0>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,880:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001AB4D851910>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,881:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001AB4D851940>> for message: [<@!568836488528265247>] in server bot testing
+2020-06-20 21:49:39,881:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 21:49:51,836:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001AB4D8518B0>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,837:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001AB4D8517F0>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,839:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001AB4D851850>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,841:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001AB4D8518E0>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,841:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001AB4D851910>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,842:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001AB4D851940>> for message: [b-b-b-b-based?] in server bot testing
+2020-06-20 21:49:51,842:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 21:50:06,154:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001AB4D8518B0>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:06,155:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001AB4D8517F0>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:06,157:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001AB4D851850>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:06,159:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001AB4D8518E0>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:06,159:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 21:50:06,160:DEBUG:dreg:      Checking rep of 568836488528265247
+2020-06-20 21:50:06,161:DEBUG:dreg:      TARGET ID IS 568836488528265247
+2020-06-20 21:50:06,164:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 21:50:06,928:DEBUG:dreg:      TOKEN IS 6728200
+2020-06-20 21:50:07,058:DEBUG:dreg:      MEMBER ID IS 387
+2020-06-20 21:50:07,557:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 21:50:07,576:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001AB4D851910>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:07,577:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001AB4D851940>> for message: [d!checkrep <@!568836488528265247>] in server bot testing
+2020-06-20 21:50:07,578:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 21:50:25,035:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001AB4D8518B0>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,036:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001AB4D8517F0>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,038:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001AB4D851850>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,040:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001AB4D8518E0>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,040:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001AB4D851910>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,041:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001AB4D851940>> for message: [😮] in server bot testing
+2020-06-20 21:50:25,041:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 21:58:56,271:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 21:58:59,970:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001CF91AA29A0>> for message: [d!checkrep] in server bot testing
+2020-06-20 21:58:59,970:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001CF91AA27C0>> for message: [d!checkrep] in server bot testing
+2020-06-20 21:58:59,973:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001CF91AA2910>> for message: [d!checkrep] in server bot testing
+2020-06-20 21:58:59,974:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001CF91AA2970>> for message: [d!checkrep] in server bot testing
+2020-06-20 21:58:59,975:DEBUG:dreg:      CHECKING MESSAGE AUTHOR
+2020-06-20 21:58:59,975:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 21:58:59,976:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 21:58:59,976:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 44, in checkrep
+    host = TOKENSTORE_HOST,
+NameError: name 'TOKENSTORE_HOST' is not defined
+2020-06-20 22:00:04,257:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:00:08,943:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000181F0031910>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:08,943:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000181F0031760>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:08,945:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000181F00318B0>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:08,946:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000181F0031940>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:08,947:ERROR:dreg:      Exception encountered while handling message with content [d!checkrep] in channel [general]
+Traceback (most recent call last):
+  File "C:\Users\Braedon\AppData\Local\Programs\Python\Python38\lib\site-packages\discord\client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "dreg.py", line 68, in on_message
+    if await listener(message):
+  File "C:\Users\Braedon\Desktop\bots\ultradreg_git\UltraDreg-develop\checkrep.py", line 30, in checkrep
+    if not message.content.lower().startswith(COMMAND_PREFIX + 'checkrep'):
+NameError: name 'COMMAND_PREFIX' is not defined
+2020-06-20 22:00:52,250:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:00:55,241:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000020AC16E18B0>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:55,242:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000020AC16E1700>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:55,244:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000020AC16E1850>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:55,246:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000020AC16E18E0>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:55,246:DEBUG:dreg:      CHECKING MESSAGE AUTHOR
+2020-06-20 22:00:55,247:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 22:00:55,247:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 22:00:55,257:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 22:00:56,026:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 22:00:56,162:DEBUG:dreg:      MEMBER ID IS 9192
+2020-06-20 22:00:56,585:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:00:56,631:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x0000020AC16E17F0>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:56,631:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x0000020AC16E1940>> for message: [d!checkrep] in server bot testing
+2020-06-20 22:00:56,633:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:04:36,662:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000020AC16E18B0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:36,663:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000020AC16E1700>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:36,665:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000020AC16E1850>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:36,666:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000020AC16E18E0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:36,667:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 22:04:36,667:DEBUG:dreg:      Checking rep of 144189675261788160
+2020-06-20 22:04:36,668:DEBUG:dreg:      TARGET ID IS 144189675261788160
+2020-06-20 22:04:36,672:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 22:04:37,442:DEBUG:dreg:      TOKEN IS 3394217
+2020-06-20 22:04:37,571:DEBUG:dreg:      MEMBER ID IS 9192
+2020-06-20 22:04:38,041:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:04:38,053:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x0000020AC16E17F0>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:38,053:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x0000020AC16E1940>> for message: [d!checkrep <@!144189675261788160>] in server bot testing
+2020-06-20 22:04:38,054:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:04:41,283:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000020AC16E18B0>> for message: [based] in server bot testing
+2020-06-20 22:04:41,283:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000020AC16E1700>> for message: [based] in server bot testing
+2020-06-20 22:04:41,285:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x0000020AC16E1850>> for message: [based] in server bot testing
+2020-06-20 22:04:41,286:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000020AC16E18E0>> for message: [based] in server bot testing
+2020-06-20 22:04:41,287:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x0000020AC16E17F0>> for message: [based] in server bot testing
+2020-06-20 22:04:41,288:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x0000020AC16E1940>> for message: [based] in server bot testing
+2020-06-20 22:04:41,288:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:28:31,370:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:28:41,362:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000230EBCB09A0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,362:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000230EBCB08E0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,364:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000230EBCB0940>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,366:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000230EBCB08B0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,367:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x00000230EBCB0A00>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,367:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x00000230EBCB0A60>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,368:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x00000230EBCB0A30>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:28:41,369:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:28:46,621:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000230EBCB09A0>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,622:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000230EBCB08E0>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,624:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000230EBCB0940>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,625:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000230EBCB08B0>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,626:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x00000230EBCB0A00>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,626:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x00000230EBCB0A60>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,786:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:28:46,793:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x00000230EBCB0A30>> for message: [d!help] in server bot testing
+2020-06-20 22:28:46,793:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:29:17,245:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:29:21,164:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001D83EB40A90>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:21,164:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001D83EB409D0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:21,166:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001D83EB40A30>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:21,168:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001D83EB409A0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:21,168:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x000001D83EB40AF0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:21,169:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 22:29:21,179:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 22:29:22,594:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:29:22,757:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:29:22,768:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001D83EB40B50>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:22,768:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001D83EB40B20>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:29:22,769:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:31:08,872:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x000001D83EB40A90>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,873:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x000001D83EB409D0>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,876:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x000001D83EB40A30>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,876:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x000001D83EB409A0>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,877:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x000001D83EB40AF0>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,877:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x000001D83EB40B50>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,878:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x000001D83EB40B20>> for message: [looking up how to make it round numbers so we dont get huge decimals] in server bot testing
+2020-06-20 22:31:08,879:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:32:43,572:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:32:50,352:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x0000023993790A30>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:50,352:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x0000023993790970>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:50,354:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000239937909D0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:50,355:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x0000023993790940>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:50,356:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x0000023993790A90>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:50,356:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 22:32:50,367:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 22:32:51,725:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:32:51,904:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:32:51,919:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x0000023993790AF0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:51,919:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x0000023993790AC0>> for message: [d!ratio <@!144189675261788160>] in server bot testing
+2020-06-20 22:32:51,920:DEBUG:dreg:      Module stack execution complete.
+2020-06-20 22:34:02,383:WARNING:discord.client:      PyNaCl is not installed, voice will NOT be supported
+2020-06-20 22:34:08,993:DEBUG:dreg:      Executing listener: <bound method Post_Aldo.aldopost of <aldo.Post_Aldo object at 0x00000224A2F50A30>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:08,994:DEBUG:dreg:      Executing listener: <bound method Toggle_Role.togglerole of <togglerole.Toggle_Role object at 0x00000224A2F50790>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:08,995:DEBUG:dreg:      Executing listener: <bound method Link_Forum.linkaccount of <linkforum.Link_Forum object at 0x00000224A2F509D0>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:08,997:DEBUG:dreg:      Executing listener: <bound method Check_Rep.checkrep of <checkrep.Check_Rep object at 0x00000224A2F50A60>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:08,997:DEBUG:dreg:      Executing listener: <bound method Check_Ratio.ratio of <ratio.Check_Ratio object at 0x00000224A2F50970>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:09,200:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:34:09,241:DEBUG:dreg:      CHECKING TARGET
+2020-06-20 22:34:09,250:DEBUG:dreg:      CONNECTION TO LOCAL USER DATABASE CLOSED
+2020-06-20 22:34:10,567:DEBUG:dreg:      Ignoring bot message.
+2020-06-20 22:34:10,591:DEBUG:dreg:      Executing listener: <bound method DREG_Help.send_bot_help of <dreg_help.DREG_Help object at 0x00000224A2F50AF0>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:10,591:DEBUG:dreg:      Executing listener: <bound method Status.report_status of <status.Status object at 0x00000224A2F509A0>> for message: [d!ratio <@!568836488528265247>] in server bot testing
+2020-06-20 22:34:10,594:DEBUG:dreg:      Module stack execution complete.
