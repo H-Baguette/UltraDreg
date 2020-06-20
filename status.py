@@ -4,7 +4,7 @@ from pathlib import Path
 import discord
 from channels import EVERYWHERE
 import roles
-from resources import DREG_AVATAR, COMMAND_PREFIX
+from resources import TLDR_LOGO, COMMAND_PREFIX
 
 LOGGER = logging.getLogger('dreg')
 
@@ -42,7 +42,7 @@ class Status():
 
         embed = discord.Embed(
             title='DREG status report', description='DREG [ONLINE]', color=0x00ff45)
-        embed.set_thumbnail(url=DREG_AVATAR)
+        embed.set_thumbnail(url=TLDR_LOGO)
 
         embed.add_field(name='deployed commit',
                         value=read_version(), inline=False)

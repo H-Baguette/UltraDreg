@@ -1,7 +1,7 @@
 import discord
 
 from channels import EVERYWHERE
-from resources import DREG_AVATAR, COMMAND_PREFIX
+from resources import TLDR_LOGO, COMMAND_PREFIX
 from roles import EVERYONE
 
 
@@ -32,7 +32,7 @@ class DREG_Help():
         # prepare embed
         embed = discord.Embed(
             title='Help', description='These features can be used in this channel.', color=0x00ff45)
-        embed.set_thumbnail(url=DREG_AVATAR)
+        embed.set_thumbnail(url=TLDR_LOGO)
 
         # add help_content from all registered modules
         for module in self.modules:
