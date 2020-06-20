@@ -63,7 +63,7 @@ class Link_Forum():
                 if isTokenDuplicate == 0:
                     cursor.execute("INSERT INTO userids(DiscordID,ForumToken) VALUES ("+str(message.author.id)+","+str(token)+")")
                     cursor.execute("COMMIT")
-                    await message.author.send("Your TheTLDR Auth token is: **" + str(token) + "**\nEnter it into the appropriate field on your profile.")
+                    await message.author.send("Your TheTLDR Auth token is: **" + str(token) + "**\nEnter it into the 'Ultradreg Token' field on your 'edit profile' page.")
                     await message.channel.send("Auth token sent.")
                 else:
                     LOGGER.debug("GENERATED DUPLICATE TOKEN")

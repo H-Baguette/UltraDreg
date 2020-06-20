@@ -13,6 +13,8 @@ from togglerole import Toggle_Role
 from status import Status
 from linkforum import Link_Forum
 from aldo import Post_Aldo
+from checkrep import Check_Rep
+from ratio import Check_Ratio
 # Constants
 from roles import has_any_role
 import channels
@@ -40,7 +42,9 @@ MODULES = [
     #Join(bot),
     Post_Aldo(bot),
     Toggle_Role(bot),
-    Link_Forum(bot)
+    Link_Forum(bot),
+    Check_Rep(bot),
+    Check_Ratio(bot)
 ]
 
 MODULES.append(DREG_Help(bot, MODULES))
