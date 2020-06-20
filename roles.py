@@ -5,6 +5,7 @@ from typing import List
 LOUNGER = 'Lounger'
 SOCK = 'Sock'
 NG = 'The Dragon Lord'
+DREG_ROLE = 'Dreg'
 
 MODERATION_ROLES = [SOCK, NG]
 

@@ -5,6 +5,7 @@ Sodom Discord bot. Bag's first bot that uses more than 1 .py file, and also thei
 - pip
 - python-setuptools
 - discord.py ~= 1.2.5
+- mysqlclient
 
 To install all Python dependencies you can use pip. Just do `pip install -r requirements.txt` in the project directory.
 
