@@ -70,7 +70,8 @@ class Check_Rep():
 
             cursor = connection.cursor()
 
-            cursor.execute("USE thetldrc_thetldr3")
+            cursor.execute("USE thetldrc_thetldr4")
+
             cursor.execute("SHOW TABLES")
             
             LOGGER.debug("TOKEN IS " +str(hasToken))
