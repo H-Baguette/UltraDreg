@@ -67,7 +67,8 @@ class Check_Ratio():
 
             cursor = connection.cursor()
 
-            cursor.execute("USE thetldrc_thetldr3")
+            cursor.execute("USE thetldrc_thetldr4")
+
             cursor.execute("SHOW TABLES")
 
             cursor.execute("SELECT name FROM MemberReputation WHERE field_17 = "+str(hasToken))
