@@ -13,6 +13,7 @@ from togglerole import Toggle_Role
 from status import Status
 from linkforum import Link_Forum
 from aldo import Post_Aldo
+from streamnotifier import Stream_Notify
 from checkrep import Check_Rep
 from ratio import Check_Ratio
 # Constants
@@ -41,6 +42,7 @@ bot = ext.commands.Bot(command_prefix='', case_insensitive=True)
 MODULES = [
     #Join(bot),
     Post_Aldo(bot),
+    Stream_Notify(bot),
     Toggle_Role(bot),
     Link_Forum(bot),
     Check_Rep(bot),
