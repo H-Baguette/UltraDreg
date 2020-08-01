@@ -42,7 +42,7 @@ class Toggle_Filter():
         LOGGER.debug('CONNECTED TO LOCAL DATABASE SERVER')
         cursor = connection.cursor() # get the cursor
 
-        cursor.execute("USE dreg") # select database
+        cursor.execute("USE "+ resources.TOKENSTORE_DB) # select database
         cursor.execute("SHOW TABLES") # execute 'SHOW TABLES' (doesn't return data)
 
         try:

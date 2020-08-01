@@ -5,9 +5,10 @@ from typing import List
 LOUNGER = 'Lounger'
 SOCK = 'Sock'
 NG = 'The Dragon Lord'
+ALDO = 'Sole Admin of Sodom (SAS)'
 DREG_ROLE = 'Dreg'
 
-MODERATION_ROLES = [SOCK, NG]
+MODERATION_ROLES = [SOCK, NG, ALDO]
 
 EVERYONE = '@everyone'
 
