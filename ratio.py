@@ -45,7 +45,7 @@ class Check_Ratio():
 
         cursor = connection.cursor()
 
-        cursor.execute("USE users")
+        cursor.execute("USE dreg")
         cursor.execute("SHOW TABLES")
 
         try:
