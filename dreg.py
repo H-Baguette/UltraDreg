@@ -87,6 +87,7 @@ async def on_member_join(member: discord.Member):
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("Type d!help for info."))
     for module in MODULES:
         for listener in module.on_ready:
             # start these concurrently, so they do not block each other
