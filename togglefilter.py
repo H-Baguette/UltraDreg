@@ -8,7 +8,7 @@ from discord.utils import get
 
 import resources
 from channels import EVERYWHERE, SERIOUS_CHANNELS
-from roles import EVERYONE, MODERATION_ROLES, has_role
+from roles import EVERYONE, MODERATION_ROLES, has_any_role
 
 LOGGER = logging.getLogger('dreg')
 
@@ -28,6 +28,8 @@ class Toggle_Filter():
     async def togglefilter(self, message: discord.Message):
 
         if not message.content.lower().startswith(resources.COMMAND_PREFIX + 'begorrah'):
+            return False
+        if not has_any_role(message.author, MODERATION_ROLES):
             return False
 
         LOGGER.debug('TOGGLING ST PATRICKS DAY FILTER')
