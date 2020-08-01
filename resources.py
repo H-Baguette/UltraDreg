@@ -1,5 +1,5 @@
-DREG_AVATAR = "https://cdn.discordapp.com/attachments/658525679041642500/695318222454521886/jerubro.png"
-TLDR_LOGO = "https://thetldr.com/uploads/monthly_2020_06/1_master.png.320d7fb076829ca5adba2c3087aa82cd.png"
+DREG_AVATAR = "https://i.imgur.com/KVZydvu.png"
+TLDR_LOGO = "https://i.imgur.com/aJdB3ps.png"
 COMMAND_PREFIX = "d!"
 
 # database connection details (KEEP PRIVATE)

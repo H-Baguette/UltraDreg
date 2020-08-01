@@ -10,9 +10,12 @@ from logging import handlers
 from join import Join
 from dreg_help import DREG_Help
 from togglerole import Toggle_Role
+from togglefilter import Toggle_Filter
+from filtermsg import Run_Filter
 from status import Status
 from linkforum import Link_Forum
 from aldo import Post_Aldo
+from streamnotifier import Stream_Notify
 from checkrep import Check_Rep
 from ratio import Check_Ratio
 # Constants
@@ -41,7 +44,10 @@ bot = ext.commands.Bot(command_prefix='', case_insensitive=True)
 MODULES = [
     #Join(bot),
     Post_Aldo(bot),
+    Stream_Notify(bot),
     Toggle_Role(bot),
+    Toggle_Filter(bot),
+    Run_Filter(bot),
     Link_Forum(bot),
     Check_Rep(bot),
     Check_Ratio(bot)
@@ -85,6 +91,7 @@ async def on_member_join(member: discord.Member):
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("Type d!help for info."))
     for module in MODULES:
         for listener in module.on_ready:
             # start these concurrently, so they do not block each other

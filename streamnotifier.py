@@ -21,7 +21,6 @@ class Stream_Notify():
         self.roles_blacklist = []
         self.on_message = [self.streamnotify]
         self.on_ready = []
-        self.help_content = {}
 
     async def streamnotify(self, message: discord.Message):
 
