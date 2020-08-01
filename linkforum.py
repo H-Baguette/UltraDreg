@@ -40,7 +40,7 @@ class Link_Forum():
         cursor = connection.cursor() # get the cursor
 
 
-        cursor.execute("USE dreg") # select the database
+        cursor.execute("USE "+ resources.TOKENSTORE_DB) # select the database
         cursor.execute("SHOW TABLES") # execute 'SHOW TABLES' (doesnt return data)
 
         try:
