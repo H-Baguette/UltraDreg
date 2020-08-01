@@ -48,7 +48,7 @@ class Check_Rep():
 
         cursor = connection.cursor()
 
-        cursor.execute("USE users")
+        cursor.execute("USE dreg")
         cursor.execute("SHOW TABLES")
 
         try:

@@ -10,6 +10,8 @@ from logging import handlers
 from join import Join
 from dreg_help import DREG_Help
 from togglerole import Toggle_Role
+from togglefilter import Toggle_Filter
+from filtermsg import Run_Filter
 from status import Status
 from linkforum import Link_Forum
 from aldo import Post_Aldo
@@ -44,6 +46,8 @@ MODULES = [
     Post_Aldo(bot),
     Stream_Notify(bot),
     Toggle_Role(bot),
+    Toggle_Filter(bot),
+    Run_Filter(bot),
     Link_Forum(bot),
     Check_Rep(bot),
     Check_Ratio(bot)
