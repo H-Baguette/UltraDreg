@@ -15,3 +15,5 @@ __pycache__/streamnotifier.cpython-38.pyc
 __pycache__/togglefilter.cpython-38.pyc
 __pycache__/togglerole.cpython-38.pyc
 dreg.log
+filtermsg.py
+resources.py
