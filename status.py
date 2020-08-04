@@ -30,7 +30,7 @@ class Status():
         self.on_message = [self.report_status]
         self.on_ready = []
         self.help_content = {'name': 'bot_status',
-                             'value': 'get a status report from the bot'}
+                             'value': 'Get a status report from the bot.'}
         self.modules = modules
 
     async def report_status(self, message: discord.Message):

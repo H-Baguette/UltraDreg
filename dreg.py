@@ -47,10 +47,10 @@ MODULES = [
     Stream_Notify(bot),
     Toggle_Role(bot),
     Toggle_Filter(bot),
-    Run_Filter(bot),
-    Link_Forum(bot),
-    Check_Rep(bot),
-    Check_Ratio(bot)
+    Run_Filter(bot)
+    #Link_Forum(bot),
+    #Check_Rep(bot),
+    #Check_Ratio(bot)
 ]
 
 MODULES.append(DREG_Help(bot, MODULES))
