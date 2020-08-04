@@ -24,10 +24,9 @@ class Stream_Notify():
 
     async def streamnotify(self, message: discord.Message):
 
-        if "https://twitch.tv/" not in message.content.lower():
+        if "https://twitch.tv/" not in message.content.lower() and "https://www.twitch.tv/" not in message.content.lower():
             return False
 
         LOGGER.debug('NOTIFYING OF STREAM')
         roleID=738518308113874994
-        # streamrole = get(guild.roles, id=roleID)
-        await message.channel.send("<@&"+str(roleID)+"> Someone's streaming, bitch!")
+        await message.channel.send("<@&"+str(roleID)+"> Stream time, friends <:soylose:713029487222194227>")

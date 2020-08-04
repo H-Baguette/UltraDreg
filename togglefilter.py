@@ -30,6 +30,7 @@ class Toggle_Filter():
         if not message.content.lower().startswith(resources.COMMAND_PREFIX + 'begorrah'):
             return False
         if not has_any_role(message.author, MODERATION_ROLES):
+            await message.channel.send("<:pinkwojak:473491909755797504> You don't have permission to do that!")
             return False
 
         LOGGER.debug('TOGGLING ST PATRICKS DAY FILTER')
