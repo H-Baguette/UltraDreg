@@ -48,7 +48,7 @@ class Check_Rep():
 
         cursor = connection.cursor()
 
-        cursor.execute("USE dreg")
+        cursor.execute("USE "+ resources.TOKENSTORE_DB)
         cursor.execute("SHOW TABLES")
 
         try:
