@@ -1,4 +1,5 @@
 import logging
+import random
 
 import discord
 from channels import EVERYWHERE, SERIOUS_CHANNELS
@@ -19,10 +20,33 @@ class Based_On_What():
 
     async def basedonwhat(self, message: discord.Message):
 
-        if 'based' not in message.content.lower():
+
+        based? = False
+        punctuation = '\~!@#$%^&\*()-=[]\\;\',./\_+{}|:"?'
+        tokens = message.content.split(' ')
+
+        for index, token in enumerate(tokens):
+            word = token
+            try:
+                while word[0] in punctuation:
+                    word = word[1:]
+                while word[-1] in punctuation:
+                    word = word[:-1]
+
+            except IndexError:
+                continue
+
+            if word.lower() == 'based':
+                based? = True
+                continue
+
+        if 'based' == False:
             return False
         
         LOGGER.debug('ASKING "BASED ON WHAT?"')
-        await message.channel.send("Based on what?")
+        if random.randint(1,100) <= 5:
+            await message.channel.send("βάση? με βάση τι?")
+        else:
+            await message.channel.send("Based on what?")
 
         
