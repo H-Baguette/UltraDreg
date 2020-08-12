@@ -37,7 +37,7 @@ class Based_On_What():
                 continue
 
             if word.lower() == 'based':
-                based? = True
+                basedInMessage = True
                 continue
 
         if basedInMessage == False:
