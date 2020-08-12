@@ -21,7 +21,7 @@ class Based_On_What():
     async def basedonwhat(self, message: discord.Message):
 
 
-        based? = False
+        basedInMessage = False
         punctuation = '\~!@#$%^&\*()-=[]\\;\',./\_+{}|:"?'
         tokens = message.content.split(' ')
 
@@ -40,7 +40,7 @@ class Based_On_What():
                 based? = True
                 continue
 
-        if 'based' == False:
+        if basedInMessage == False:
             return False
         
         LOGGER.debug('ASKING "BASED ON WHAT?"')
