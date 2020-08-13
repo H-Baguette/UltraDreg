@@ -16,6 +16,7 @@ from status import Status
 from linkforum import Link_Forum
 from aldo import Post_Aldo
 from streamnotifier import Stream_Notify
+from based import Based_On_What
 from checkrep import Check_Rep
 from ratio import Check_Ratio
 # Constants
@@ -47,7 +48,8 @@ MODULES = [
     Stream_Notify(bot),
     Toggle_Role(bot),
     Toggle_Filter(bot),
-    Run_Filter(bot)
+    Run_Filter(bot),
+    Based_On_What(bot)
     #Link_Forum(bot),
     #Check_Rep(bot),
     #Check_Ratio(bot)
