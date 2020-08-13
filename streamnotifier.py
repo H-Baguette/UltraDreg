@@ -11,6 +11,19 @@ from roles import EVERYONE
 
 LOGGER = logging.getLogger('dreg')
 
+# initialize whitelist
+streamWhitelist = [
+    'twitch.tv/hbaguette',
+    'twitch.tv/noamfan95',
+    'twitch.tv/thebadmrfrosty',
+    'twitch.tv/cliffracerfan95',
+    'twitch.tv/samourai1468',
+    'twitch.tv/sock_online',
+    'twitch.tv/peter_plays',
+    'twitch.tv/ronaldgaming'
+    ]
+
+
 class Stream_Notify():
 
     def __init__(self,bot):
@@ -24,7 +37,8 @@ class Stream_Notify():
 
     async def streamnotify(self, message: discord.Message):
 
-        if "https://twitch.tv/" not in message.content.lower() and "https://www.twitch.tv/" not in message.content.lower():
+
+        if any(stroomer in message.content.lower() for stroomer in streamWhitelist) == False:
             return False
 
         LOGGER.debug('NOTIFYING OF STREAM')
