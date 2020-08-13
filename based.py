@@ -42,11 +42,12 @@ class Based_On_What():
 
         if basedInMessage == False:
             return False
-        
-        LOGGER.debug('ASKING "BASED ON WHAT?"')
-        if random.randint(1,100) <= 5:
-            await message.channel.send("βάση? με βάση τι?")
-        else:
-            await message.channel.send("Based on what?")
+
+        if random.randint(1,10000) <= 10:
+            LOGGER.debug('ASKING "BASED ON WHAT?"')
+            if random.randint(1,10000) == 1:
+                await message.channel.send("βάση? με βάση τι?")
+            else:
+                await message.channel.send("Based on what?")
 
         
