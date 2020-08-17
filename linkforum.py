@@ -1,5 +1,5 @@
 import logging
-import MySQLdb
+import pymysql.cursors
 import random
 
 import discord
@@ -32,7 +32,7 @@ class Link_Forum():
 
         LOGGER.debug('Linking user to forum')
 
-        connection = MySQLdb.connect(
+        connection = pymysql.connect(
             host = 'localhost',
             user = 'root',
             passwd = 'toor') # create the connection

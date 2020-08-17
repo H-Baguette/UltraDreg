@@ -1,5 +1,5 @@
 import logging
-import MySQLdb
+import pymysql.cursors
 import random
 
 import discord
@@ -35,7 +35,7 @@ class Toggle_Filter():
 
         LOGGER.debug('TOGGLING ST PATRICKS DAY FILTER')
 
-        connection = MySQLdb.connect(
+        connection = pymysql.connect(
             host = resources.TOKENSTORE_HOST,
             user = resources.TOKENSTORE_USER,
             passwd = resources.TOKENSTORE_PASS) # create the connection

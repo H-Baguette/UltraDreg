@@ -8,7 +8,7 @@ NG = 'The Dragon Lord'
 ALDO = 'Sole Admin of Sodom (SAS)'
 DREG_ROLE = 'Dreg'
 
-MODERATION_ROLES = [SOCK, NG, ALDO]
+MODERATION_ROLES = [SOCK, NG]
 
 EVERYONE = '@everyone'
 
