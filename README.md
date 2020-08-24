@@ -5,7 +5,8 @@ Discord bot for the Sodom Discord server.
 - pip
 - python-setuptools
 - discord.py
-- mysqlclient
+- pymysql
+- google
 
 To install all Python dependencies you can use pip. Just do `pip install -r requirements.txt` in the project directory.
 
