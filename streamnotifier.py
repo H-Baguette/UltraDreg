@@ -20,7 +20,9 @@ streamWhitelist = [
     'twitch.tv/samourai1468',
     'twitch.tv/sock_online',
     'twitch.tv/peter_plays',
-    'twitch.tv/ronaldgaming'
+    'twitch.tv/ronaldgaming',
+    'twitch.tv/aldomatica',
+    'twitch.tv/alioninacoma'
     ]
 
 
