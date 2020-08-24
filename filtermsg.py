@@ -1,6 +1,6 @@
 import os
 import logging
-import MySQLdb
+import pymysql.cursors
 import random
 # from dotenv import load_dotenv
 
@@ -31,7 +31,7 @@ class Run_Filter():
 
         LOGGER.debug('CHECKING FILTER STATUS')
 
-        connection = MySQLdb.connect(
+        connection = pymysql.connect(
             host = resources.TOKENSTORE_HOST,
             user = resources.TOKENSTORE_USER,
             passwd = resources.TOKENSTORE_PASS) # create the connection
@@ -39,7 +39,7 @@ class Run_Filter():
         LOGGER.debug('CONNECTED TO LOCAL DATABASE SERVER')
         cursor = connection.cursor() # get the cursor
 
-        cursor.execute("USE dreg") # select database
+        cursor.execute("USE "+resources.TOKENSTORE_DB) # select database
         cursor.execute("SHOW TABLES") # execute 'SHOW TABLES' (doesn't return data)
 
         try:
@@ -55,8 +55,7 @@ class Run_Filter():
             return False
 
         replacements = {
-            'exampleinput':'exampleoutput',
-            'exampleinput1':'exampleoutput1'
+        'exampleinput': 'exampleoutput'
         }
 
         punctuation = '\~!@#$%^&\*()-=[]\\;\',./\_+{}|:"?' # importantly, <> are absent from this
@@ -100,7 +99,8 @@ class Run_Filter():
         edit = ' '.join(tokens)
 
         # things that should be filtered no matter what
-        edit = edit.replace("example","exampleoutput")
+        edit = edit.replace("exampleinput", "exampleoutput")
+
 
         if len(edit) > 0 and edit[0] == '%':
             edit = '.' + edit

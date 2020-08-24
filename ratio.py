@@ -1,5 +1,5 @@
 import logging
-import MySQLdb
+import pymysql.cursors
 import re
 
 import discord
@@ -38,7 +38,7 @@ class Check_Ratio():
             target = message.author.id
             LOGGER.debug("CHECKING MESSAGE AUTHOR")
 
-        connection = MySQLdb.connect(
+        connection = pymysql.connect(
             host = resources.TOKENSTORE_HOST,
             user = resources.TOKENSTORE_USER,
             passwd = resources.TOKENSTORE_PASS)
@@ -60,7 +60,7 @@ class Check_Ratio():
                 return
             hasToken = hasToken[0]
 
-            connection = MySQLdb.connect(
+            connection = pymysql.cursors.connect(
                 host = resources.TLDR_HOST,
                 user = resources.TLDR_USER,
                 passwd = resources.TLDR_PASS)

@@ -2,23 +2,25 @@
 import discord
 from discord import ext
 from discord.ext import commands
+from pretty_help import PrettyHelp
 import sys
 import asyncio
 import logging
 from logging import handlers
 # Modules
 from join import Join
-from dreg_help import DREG_Help
+#from dreg_help import DREG_Help
 from togglerole import Toggle_Role
-from togglefilter import Toggle_Filter
+from togglefilter import togglefilter
 from filtermsg import Run_Filter
 from status import Status
 from linkforum import Link_Forum
-from aldo import Post_Aldo
+from aldo import aldopost
 from streamnotifier import Stream_Notify
 from based import Based_On_What
 from checkrep import Check_Rep
 from ratio import Check_Ratio
+from google import google
 # Constants
 from roles import has_any_role
 import channels
@@ -39,15 +41,22 @@ LOGGER.setLevel(logging.DEBUG)
 
 # command prefix defined in resources.py, i know its janky but its the
 # only way i can get it to work, otherwise it shits itself
-bot = ext.commands.Bot(command_prefix='', case_insensitive=True)
+bot = ext.commands.Bot(command_prefix='d!', 
+                       case_insensitive=True, 
+                       help_command=PrettyHelp(color=0x00ff45))
 
-# register modules
+
+#INITIALIZE COMMANDS
+bot.add_command(aldopost)
+bot.add_command(togglefilter)
+bot.add_command(google)
+
+
+# register listeners
 MODULES = [
     #Join(bot),
-    Post_Aldo(bot),
     Stream_Notify(bot),
-    Toggle_Role(bot),
-    Toggle_Filter(bot),
+    #Toggle_Role(bot),
     Run_Filter(bot),
     Based_On_What(bot)
     #Link_Forum(bot),
@@ -55,8 +64,10 @@ MODULES = [
     #Check_Ratio(bot)
 ]
 
-MODULES.append(DREG_Help(bot, MODULES))
+#MODULES.append(DREG_Help(bot, MODULES))
 MODULES.append(Status(bot, MODULES))
+
+
 
 @bot.event
 async def on_message(message: discord.Message):
@@ -79,6 +90,7 @@ async def on_message(message: discord.Message):
                     LOGGER.debug('Listener returned true. Terminating early.')
                     return
     LOGGER.debug('Module stack execution complete.')
+    await bot.process_commands(message)
     
     
 @bot.event

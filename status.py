@@ -46,7 +46,7 @@ class Status():
 
         embed.add_field(name='deployed commit',
                         value=read_version(), inline=False)
-        embed.add_field(name='active modules', value=[
+        embed.add_field(name='active listeners', value=[
             module.__class__.__name__ for module in self.modules],inline=False)
 
         await message.channel.send(embed=embed)
